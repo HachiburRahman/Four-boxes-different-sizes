@@ -6,18 +6,18 @@
 <title>Two Column Flex Layout</title>
 <style>
    
-.container {
+/* .container {
     width: 700px;
     height: 800px;
-    display: flex; /* two columns side-by-side */
+    display: flex; 
     border: 2px solid black;
     margin: 200px auto;
 }
 
 .column {
-    flex: 1; /* each column takes half width */
+    flex: 1; 
     display: flex;
-    flex-direction: column; /* stack boxes vertically */
+    flex-direction: column; 
 }
 
 .box {
@@ -27,11 +27,30 @@
     align-items: center;
 }
 
-/* Different heights but still fit in container */
+
+.box1 { height: 500px; background: lightcoral; }
+.box2 { height: 300px; background: lightblue; }
+.box3 { height: 290px; background: lightgreen; }
+.box4 { height: 510px; background: khaki; } */
+.container{
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px auto;
+    
+}
+.box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 .box1 { height: 500px; background: lightcoral; }
 .box2 { height: 300px; background: lightblue; }
 .box3 { height: 290px; background: lightgreen; }
 .box4 { height: 510px; background: khaki; }
+
+
 </style>
 </head>
 <body class="main">
